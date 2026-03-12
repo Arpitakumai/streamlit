@@ -9,10 +9,10 @@ st.title("Tip Prediction App")
 total_bill = st.number_input("Total Bill")
 size = st.number_input("Size")
 
-sex = st.selectbox("Sex", ["male","female"])
-smoker = st.selectbox("Smoker", ["yes","no"])
-day = st.selectbox("Day", ["thur","fri","sat","sun"])
-time = st.selectbox("Time", ["lunch","dinner"])
+sex = st.selectbox("Sex", ["Male","Female"])
+smoker = st.selectbox("Smoker", ["Yes","No"])
+day = st.selectbox("Day", ["Thur","Fri","Sat","Sun"])
+time = st.selectbox("Time", ["Lunch","Dinner"])
 
 input_data = pd.DataFrame({
     "total_bill":[total_bill],
