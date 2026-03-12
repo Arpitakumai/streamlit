@@ -1,8 +1,8 @@
 import streamlit as st
-import joblib
+import pickle
 import pandas as pd
 
-model = joblib.load("tips_model.pkl")
+model = pickle.load(open("tips_model.pkl"))
 
 st.title("Tip Prediction App")
 
