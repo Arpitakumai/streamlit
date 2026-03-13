@@ -2,7 +2,9 @@ import streamlit as st
 import pickle
 import pandas as pd
 
-model = pickle.load(open("tips_model.pkl"))
+
+
+model = pickle.load(open("tips_model.pkl", "rb"))
 
 st.title("Tip Prediction App")
 
